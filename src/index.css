@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --bg-blue: #ddecff;
+  --blue: #2a76e3;
+  --blue-hover: #2566c1;
+  --light-blue: #71aaff;
+  --darkblue: #002d7b;
+}
+
+html {
+  @apply scroll-smooth bg-(--bg-blue);
+}
+
+.formShadow {
+  box-shadow: rgb(0, 0, 0, 0.2) 0px 0px 16px;
+}
+
+.submitButton {
+  @apply text-xl font-medium text-white bg-(--blue) py-3 rounded-xl cursor-pointer hover:bg-(--blue-hover);
+}
+/* STYLES FOR GOOGLE + PHONE BUTTONS */
+/* .authButton {
+  @apply text-xl font-medium text-white bg-(--light-blue) py-3 rounded-xl cursor-pointer w-full;
+} */
+
+/* INPUTS */
+input {
+  @apply bg-white;
+}
+input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--darkblue);
+  padding: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+input[type="checkbox"]:checked {
+  background-color: var(--darkblue);
+}
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  top: 1px;
+  left: 5px;
+  transform: rotate(45deg);
+}
