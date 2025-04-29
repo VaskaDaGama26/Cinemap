@@ -5,7 +5,9 @@
   --blue: #2a76e3;
   --blue-hover: #2566c1;
   --light-blue: #71aaff;
+  --lighter-blue: #8cbaff;
   --darkblue: #002d7b;
+  --white: #ffffff;
 }
 
 html {
@@ -17,7 +19,7 @@ html {
 }
 
 .submitButton {
-  @apply text-xl font-medium text-white bg-(--blue) py-3 rounded-xl cursor-pointer hover:bg-(--blue-hover);
+  @apply text-xl font-medium text-(--white) bg-(--blue) py-3 rounded-xl cursor-pointer duration-300 hover:bg-(--blue-hover);
 }
 /* STYLES FOR GOOGLE + PHONE BUTTONS */
 /* .authButton {
